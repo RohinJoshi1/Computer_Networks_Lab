@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class BellmanFordAdjacencyList {
+public class BelmannFord {
 
   // A directed edge with a cost
   public static class Edge {
@@ -67,7 +67,7 @@ public class BellmanFordAdjacencyList {
 
   public static void main(String[] args) {
 
-    int E = 10, V = 9, start = 0;
+    int V = 9, start = 0;
     List<Edge>[] graph = createGraph(V);
     addEdge(graph, 0, 1, 1);
     addEdge(graph, 1, 2, 1);

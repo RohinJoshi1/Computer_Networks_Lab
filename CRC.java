@@ -60,10 +60,12 @@ import java.util.*;
         int j = gen_len;
         while(j<receivedString.length()){
             temp_dividend = XOR(temp_dividend, temp_div);
-            temp_dividend = temp_dividend + dividend.charAt(j);
+            temp_dividend = temp_dividend + receivedString.charAt(j);
             j++;
         }
-        String error = input + XOR(temp_dividend, temp_div);
+        System.out.println(temp_dividend);
+        String error = XOR(temp_dividend, temp_div);
+        System.out.println(error);
         boolean flag = false;
         for(int i=0;i<gen_len-1;i++){
             if(error.charAt(i) == '1'){
